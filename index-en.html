@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icaro Almeida de Souza - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900">
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 bg-white/80 dark:bg-gray-900/80 w-full border-b border-gray-200 dark:border-gray-700 backdrop-blur-sm z-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Icaro Almeida de Souza</span>
+        </a>
+        <div class="flex md:order-2 space-x-2 md:space-x-3">
+            <a href="#contato" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Contact
+            </a>
+            
+            <!-- Language Button (CORRECTED ICON COLOR) -->
+            <a href="index.html" title="Mudar para Português" class="text-gray-500 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <i class="fa-solid fa-globe fa-lg"></i>
+            </a>
+
+            <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/></svg>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                <li><a href="#sobre" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">About</a></li>
+                <li><a href="#projetos" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Projects</a></li>
+                <li><a href="#contato" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main class="container mx-auto px-4 py-8">
+         <!-- SOBRE MIM -->
+        <section id="sobre" class="py-16 lg:py-24">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="flex-shrink-0">
+                    <!-- Substitua pela URL da sua foto -->
+                <img class="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-gray-200 dark:border-gray-600" src="https://tess-cdn.pareto.io/assets/uploads/5bde9151-9000-43cd-ab80-627c4c77a014.png" alt="Foto do perfil">
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+                        Hi, I'm Icaro Almeida de Souza
+                    </h1>
+                    <p class="mt-2 text-xl font-medium text-blue-600 dark:text-blue-400">
+                        Data Analyst | BI Analyst
+                    </p>
+                    <p class="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
+                        <!-- Edite sua biografia aqui -->
+                        With over 3 years of experience, my goal is to turn data into business results. My focus is on discovering patterns and building solutions that drive strategic decisions, communicating the results in a clear and actionable way.
+                    </p>
+                    <div class="mt-6 flex justify-center md:justify-start items-center gap-4">
+                        <a href="www.linkedin.com/in/icaroalmeidas" class="text-gray-500 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="http://wa.me/5583991567574" class="text-gray-500 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500" title="LinkedIn">
+                            <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        </a>
+                        <a href="mailto:icaroalmeidas@hotmail.com" class="text-gray-500 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500" title="E-mail">
+                            <i class="fa-solid fa-envelope fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section id="projetos" class="my-20">
+            <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">My Projects</h2>
+            <p class="text-lg text-center text-gray-600 dark:text-gray-400 mb-12">
+                Here are some of the projects I've worked on, applying data analysis concepts to solve real-world problems.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-slate-800 rounded-lg p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Strategic Dashboard - Traffic</h3>
+                        <p class="text-gray-400 mb-4">The goal of this dashboard is to provide a clear and focused view of traffic performance from Viaje Holé's campaigns and partners. It includes metrics like number of visits, leads, conversion rate, etc., enabling agile, data-driven adjustments and service improvements.</p>
+                        <p class="text-gray-300 font-semibold">Technologies:</p>
+                        <div class="flex flex-wrap gap-2 mt-2 mb-4">
+                            <span class="bg-blue-600 text-white text-xs font-semibold px-2.5 py-1 rounded">SQL</span>
+                            <span class="bg-green-600 text-white text-xs font-semibold px-2.5 py-1 rounded">Excel</span>
+                            <span class="bg-purple-600 text-white text-xs font-semibold px-2.5 py-1 rounded">Looker Studio</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline mt-4 inline-block">View on Looker Studio <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-slate-800 rounded-lg p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Strategic Report - Power BI</h3>
+                        <p class="text-gray-400 mb-4">The objective of this dashboard is to provide a strategic view of the business, including Company Revenue, Customer Acquisition/Churn, and establishment metrics. This work enables the company to make more agile decisions through easy monitoring of results.</p>
+                        <p class="text-gray-300 font-semibold">Technologies:</p>
+                        <div class="flex flex-wrap gap-2 mt-2 mb-4">
+                            <span class="bg-sky-500 text-white text-xs font-semibold px-2.5 py-1 rounded">Python</span>
+                            <span class="bg-lime-500 text-white text-xs font-semibold px-2.5 py-1 rounded">Pandas</span>
+                            <span class="bg-yellow-500 text-black text-xs font-semibold px-2.5 py-1 rounded">Power BI</span>
+                            <span class="bg-red-600 text-white text-xs font-semibold px-2.5 py-1 rounded">M Language</span>
+                            <span class="bg-red-800 text-white text-xs font-semibold px-2.5 py-1 rounded">DAX</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline mt-4 inline-block">Confidential Company <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-slate-800 rounded-lg p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Sales Dashboard</h3>
+                        <p class="text-gray-400 mb-4">This dashboard analyzes the efficiency of a sales funnel with metrics such as efficiency rate, and sales volume by team, state, month, and year. It offers three views: MAIN, LEADS, SALES, and a REVENUE GOAL SIMULATOR.</p>
+                        <p class="text-gray-300 font-semibold">Technologies:</p>
+                        <div class="flex flex-wrap gap-2 mt-2 mb-4">
+                            <span class="bg-yellow-500 text-black text-xs font-semibold px-2.5 py-1 rounded">Power BI</span>
+                            <span class="bg-red-600 text-white text-xs font-semibold px-2.5 py-1 rounded">M Language</span>
+                            <span class="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-1 rounded">DAX</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline mt-4 inline-block">View Dashboard <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-slate-800 rounded-lg p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Logistics Project</h3>
+                        <p class="text-gray-400 mb-4">Presents a view of a key logistics indicator, OTIF (On-Time In-Full), showing the percentage of shipments delivered on time and without damage. This allows for real-time management of the logistics operation.</p>
+                        <p class="text-gray-300 font-semibold">Technologies:</p>
+                        <div class="flex flex-wrap gap-2 mt-2 mb-4">
+                            <span class="bg-yellow-500 text-black text-xs font-semibold px-2.5 py-1 rounded">Power BI</span>
+                            <span class="bg-red-600 text-white text-xs font-semibold px-2.5 py-1 rounded">M Language</span>
+                            <span class="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-1 rounded">DAX</span>
+                            <span class="bg-blue-600 text-white text-xs font-semibold px-2.5 py-1 rounded">SQL</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline mt-4 inline-block">View Projects <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-slate-800 rounded-lg p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">People Analytics - HR Dashboard</h3>
+                        <p class="text-gray-400 mb-4">Provides a complete view of employees and their metrics. It includes general, manager-specific, employee-specific, and department-level views with metrics like employee evaluations, hires, turnover, and more.</p>
+                        <p class="text-gray-300 font-semibold">Technologies:</p>
+                        <div class="flex flex-wrap gap-2 mt-2 mb-4">
+                           <span class="bg-yellow-500 text-black text-xs font-semibold px-2.5 py-1 rounded">Power BI</span>
+                            <span class="bg-red-600 text-white text-xs font-semibold px-2.5 py-1 rounded">M Language</span>
+                            <span class="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-1 rounded">DAX</span>
+                            <span class="bg-blue-600 text-white text-xs font-semibold px-2.5 py-1 rounded">SQL</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline mt-4 inline-block">View Projects <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-slate-800 rounded-lg p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">For More Projects</h3>
+                        <p class="text-gray-400 mb-4">In this link, you will find more projects and reports that demonstrate my qualifications.</p>
+                        <p class="text-gray-300 font-semibold">Technologies:</p>
+                        <div class="flex flex-wrap gap-2 mt-2 mb-4">
+                            <span class="bg-yellow-500 text-black text-xs font-semibold px-2.5 py-1 rounded">Power BI</span>
+                            <span class="bg-red-600 text-white text-xs font-semibold px-2.5 py-1 rounded">M Language</span>
+                            <span class="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-1 rounded">DAX</span>
+                            <span class="bg-blue-600 text-white text-xs font-semibold px-2.5 py-1 rounded">SQL</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline mt-4 inline-block">View Projects <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contato" class="my-20">
+            <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">Get in Touch</h2>
+            <p class="text-lg text-center text-gray-600 dark:text-gray-400 mb-12">
+                I am always open to new opportunities and collaborations. Feel free to get in touch through my social networks or by email.
+            </p>
+            <div class="flex justify-center items-center gap-8">
+                <a href="https://www.linkedin.com/in/icaroalmeidas/" target="_blank" title="Connect on LinkedIn" class="text-gray-500 hover:text-blue-700 dark:hover:text-blue-400">
+                    <i class="fa-brands fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://wa.me/5571993430635" target="_blank" title="Contact via WhatsApp" class="text-gray-500 hover:text-green-600 dark:hover:text-green-400">
+                    <i class="fa-brands fa-whatsapp fa-3x"></i>
+                </a>
+                <a href="mailto:icaro.as@outlook.com" title="Send an Email" class="text-gray-500 hover:text-gray-800 dark:hover:text-gray-300">
+                    <i class="fa-solid fa-envelope fa-3x"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+        <div class="max-w-screen-xl mx-auto p-4 text-center text-gray-600 dark:text-gray-400">
+            © 2025 Icaro Almeida de Souza. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle logic
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            document.documentElement.classList.add('dark');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+            document.documentElement.classList.remove('dark');
+        }
+
+        var themeToggleButton = document.getElementById('theme-toggle');
+        themeToggleButton.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+
+        // Mobile menu toggle
+        const collapseButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+        const navbar = document.getElementById('navbar-sticky');
+        collapseButton.addEventListener('click', () => {
+            navbar.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
